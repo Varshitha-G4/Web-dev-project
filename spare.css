@@ -1,0 +1,46 @@
+        }
+        /* Container to hold both image and text */
+        .imageContainer{
+            position: relative;
+            width: 300px;
+            height: auto;
+            display: inline-block;
+        }
+        /* Styling for the image */
+        .flipImage{
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease-in-out; /* Smooth transition effect */
+            position: relative;
+            z-index: 2; /* Image is initially on top */
+        }
+        /* Styling for the text behind the image */
+        .textBehind{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: rgba(0, 0, 0, 0.8); /* Semi-transparent text */
+            z-index: 1; /* Text is behind the image */
+            pointer-events: none; /* Ensures the image is still clickable */
+            opacity: 0; /* Hidden initially */
+            transition: opacity 0.5s ease-in-out;
+        }
+        /* Flip the image horizontally when hovered */
+        .imageContainer:hover.flipImage{
+            transform: scaleX(-1); /* Horizontal flip */
+            opacity: 0.125;
+        }
+        /* Show the text when the image is flipped */
+        .imageContainer:hover .textBehind {
+            opacity: 1; /* Text becomes visible */
+        }
+        <body>
+    <h1 class="box1">Cafe</h1>
+    <div class="image-container">
+        <div class="Text-behind">hello</div>
+        <img src="IcedCoffee.jpg" class="flip-image">
+        <p>expresso</p>
+    </div>
+</body>
