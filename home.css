@@ -4,10 +4,12 @@ to remove the white spaces around the edges initialize padding and margin to 0 *
 body {
   margin: 0;
   padding: 0;
- 
 }
+
 .background-container {
-  margin-top: -25px;
+  position: relative;
+  margin-top: -100px; /* Move the background upwards */
+  padding-top: 100px;
   height: 1000px;
   background-color: #261a0b;
   border-bottom-left-radius: 30px;
@@ -17,9 +19,7 @@ body {
 }
 
 .header {
- 
-  position: relative;
-  padding: 25px;
+  padding: 20px;
   border-radius: 5px;
   position: sticky;
   z-index: 1000;
@@ -27,7 +27,14 @@ body {
   flex-direction: row;
   justify-content: flex-end;
   top: 0;
-  background-color: transparent;} 
+  background-color: transparent;
+  transition: opacity 0.5s ease;
+}
+
+.opaque-header {
+  background-color: #261a0b;
+  opacity: 1;
+}
 
 .header-link {
   position: relative;
@@ -41,15 +48,16 @@ body {
   padding: 0 15px;
   z-index: 1000;
   margin: 0 10px;
+  bottom: -0.5px;
 }
 
 #logo {
   position: absolute;
-  top: 5px;
+  top: 1px;
   left: 10px;
-  height: 83px;
-  width: 83px;
-  border-radius: 50%;
+  height: 88px; /* Increased from 90px */
+  width: 110px; /* Increased from 100px */
+  border-radius: 75%;
 }
 
 .header-link:hover {
@@ -113,6 +121,17 @@ body {
   color: #fffff0;
   padding-left: 100px;
 }
+
+.menu-button {
+  padding: 20px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #a57a5b; /* Adjust to match your theme */
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
 .of-box {
   display: inline-block; /* Make the element respect padding and border */
   border: 3px solid #e5d3b363;
@@ -145,7 +164,7 @@ body {
   margin-top: 100px;
 }
 
-#about-us-container{
+#about-us-container {
   background-color: #e5d3b3;
   color: #261a0b;
   width: 60%;
@@ -159,39 +178,36 @@ body {
   font-size: 23px;
   display: flex;
   align-items: center; /*to align text and img to the center (vertically)*/
-
+  margin-right: auto;
 }
 
-#about-us-content{
+#about-us-content {
   display: flex;
   flex-direction: row;
-  
 }
 
-#about-us-img{
+#about-us-img {
   position: relative;
   height: auto;
-  width: 275px;
+  width: 390px;
   align-items: left;
   border-radius: 30px;
-  margin:10px 20px;
-
+  margin: 10px 20px;
 }
 
-#explore-our-roots-btn{
+#explore-our-roots-btn {
   background-color: #261a0b;
-  color:#d2b48c;
+  color: #d2b48c;
   margin-top: 30px;
   margin-left: 30px;
 }
 
-#explore-our-roots-btn:hover{
+#explore-our-roots-btn:hover {
   color: #261a0b;
   background-color: #fffff0;
-
 }
 
-.menu-container{
+.menu-container {
   width: 100%;
   height: 30%;
   margin: 300px 0px;
@@ -200,8 +216,8 @@ body {
 .menu-image-gallery {
   display: flex;
   justify-content: space-around; /* Space between the images */
-  margin: 10px auto 0; 
-  width: 80%; 
+  margin: 10px auto 0;
+  width: 80%;
 }
 
 .menu-image-gallery img {
@@ -211,10 +227,132 @@ body {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
 }
 
-.our-style{
+.our-style {
   color: #261a0b;
 }
 
-.menu-style{
+.menu-style {
   color: #b99976;
+}
+
+.sign-up-container {
+  background-color: #e5d3b3;
+  color: #261a0b;
+}
+
+.footer-container {
+  background-color: #e5d3b3;
+  color: #987554;
+  font-family: "Playpen Sans", sans-serif;
+  font-size: 40;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: 500;
+  gap: 150px;
+}
+
+.footer-section {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.payment-flex {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-section a {
+  color: #987554;
+  font-family: "Playpen Sans", sans-serif;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #fffff0;
+}
+
+.footer-bottom {
+  margin-left: 30px;
+  font-family: "Playpen Sans", sans-serif;
+  color: #261a0b;
+  display: flex;
+  padding: 15px;
+}
+
+footer {
+  background-color: #e5d3b3;
+}
+
+.footer-bottom span {
+  padding-right: 45%;
+  color: #987554;
+}
+.footer-icons {
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+  gap: 20px;
+}
+.footer-icons a {
+  text-decoration: none;
+  color: #987554;
+}
+
+.footer-icons a:hover {
+  color: #261a0b;
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-button-right {
+  font-family: "Playpen Sans", sans-serif;
+  font-size: 18px;
+  padding: 10px 20px;
+  color: #fffff0;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  background-color: #261a0b;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+
+.contact-us-container {
+  text-align: center;
+  margin: 50px 0;
+  padding: 40px;
+  background-color: #f4f4f9;
+  font-family: "Playpen Sans", sans-serif;
+}
+
+.contact-us-container h2 {
+  font-size: 28px;
+  color: #261a0b;
+}
+
+.contact-us-container p {
+  font-size: 18px;
+  color: #987554;
+  margin: 10px 0;
+}
+
+.contact-us-container a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fffff0;
+  background-color: #8b4513;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.contact-us-container a:hover {
+  background-color: #a0522d;
 }
