@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Café Caloroso: Your Cup of Comfort</title>
     <link rel="stylesheet" href="home.css" />
+    <script
+      src="https://kit.fontawesome.com/3a87439f5c.js"
+      crossorigin="anonymous"
+    ></script>
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
     </style>
@@ -12,26 +17,25 @@
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap");
   </style>
-
+  <script type="text/javascript" src="home.js"></script>
   <body>
-    <div class="background-container">
-      <div class="header">
-        <a href="home.html">
-          <img
-            id="logo"
-            src="https://cdn.dribbble.com/users/8322394/screenshots/16257129/media/52e02c3a2da5974e1f9d0d27de7ae5cb.jpg"
-            alt="logo"
-          />
-        </a>
-        <a href="#" class="header-link">Our Roots</a>
-        <a href="#" class="header-link">Menu</a>
-        <a href="#" class="header-link">Others</a>
-        <a href="#" class="header-link">Contact Us</a>
-        <button class="btn-style">Login</button>
-      </div>
+    <div class="header">
+      <a href="home.html">
+        <img id="logo" src="images/logo-withoutBG.png" alt="logo" />
+      </a>
+      <a href="#" class="header-link">Our Story</a>
+      <a href="#" class="header-link">Menu</a>
+      <a href="#" class="header-link">Focus</a>
+      <a href="#" class="header-link">Gift Cards</a>
+      <button class="btn-style">Login</button>
+    </div>
 
-     
-      <img id="homepg-img-cover" src="coffeebook_final.png" alt="coffee" />
+    <div class="background-container">
+      <img
+        id="homepg-img-cover"
+        src="images/coffeebook_final.png"
+        alt="coffee"
+      />
       <br /><br /><br />
       <span class="dot">•</span>
       <span class="satisfy-regular">Welcome to Café Caloroso</span><br /><br />
@@ -54,26 +58,85 @@
           Our space is designed for creativity, calm, and community. Discover
           more about our story and what makes us unique.
           <button class="btn-style" id="explore-our-roots-btn">
-            Explore Our Roots
+            Know About Us
           </button>
         </div>
         <div>
-          <img
-            id="about-us-img"
-            src="https://i.redd.it/i-got-bored-so-i-decided-to-draw-a-random-image-on-the-v0-4ig97vv85vjb1.png?width=1280&format=png&auto=webp&s=7177756d1f393b6e093596d06e1ba539f723264b"
-            alt="img"
-          />
+          <img id="about-us-img" src="images/logo-withoutBG.png" alt="img" />
         </div>
       </div>
     </div>
-      <div class="menu-container">
-      <div class="your-cup"><span class="our-style">Our </span><span class="menu-style">Menu</span> </div><br><br>
+    <div class="menu-container">
+      <div class="your-cup">
+          
+        <div class="menu-header">
+          <div>
+        <span class="our-style">Our </span><span class="menu-style">Menu</span>
+            </div>
+        <button class="menu-button-right">Explore Our Menu →</button>
+      </div>
+      </div>
+    
+      <br /><br />
+    
       <div class="menu-image-gallery">
-      <img src="flyingCoffee.jpeg" alt="Image 1" />
-      <img src="flyingCoffee.jpeg" alt="Image 2" />
-      <img src="flyingCoffee.jpeg" alt="Image 3" />
-      <img src="flyingCoffee.jpeg" />
+        <img src="images/flyingCoffee.jpeg" alt="Image 1" />
+        <img src="images/flyingCoffee.jpeg" alt="Image 2" />
+        <img src="images/flyingCoffee.jpeg" alt="Image 3" />
+        <img src="images/flyingCoffee.jpeg" />
+        
+       
+      </div>
+      
     </div>
-  </div>
+
+    <div class="contact-us-container">
+      <h2>Contact Us</h2>
+      <p>For any inquiries or feedback, feel free to reach out to us.</p>
+      <a href="contact.html">Click here</a>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          Payment Options<br /><br />
+          <div class="payment-flex">
+            <img src="images/paytm-icon.svg" class="paytm-icon" />
+            <img src="images/phonepe-icon.svg" class="paytm-icon" />
+            <img src="images/googlepay-icon.svg" class="paytm-icon" />
+          </div>
+        </div>
+        <div class="footer-section">
+          Contact Us<br /><br />
+          +91 6788627683<br />
+          +91 8816352980<br />
+          contactus@cafecaloroso.in<br /><br />
+          Find Us at:<br />
+          <br />
+          Kambli Wadi, Tejpal Road,<br />
+          Opp Rly Stn, Vile Parle,<br />
+          Bangalore
+        </div>
+        <div class="footer-section">
+          <a href="home.html">HOME</a><br />
+          <a href="#ourStory">OUR STORY</a><br />
+          <a href="#">MENU</a><br />
+          <a href="#">FOCUS</a><br />
+          <a href="#">GIFT CARDS</a><br />
+          <a href="#">LOGIN</a><br />
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <span>
+          ©2024 Café Caloroso | All Rights Reserved | Powered by PESU</span
+        >
+        <div class="footer-icons">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-linkedin-in"></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
