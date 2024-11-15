@@ -98,6 +98,7 @@ body {
   font-size: 20px;
   border: #e5d3b3;
   padding: 5px 20px;
+  text-decoration: none;
 }
 
 .btn-style:hover {
